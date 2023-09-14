@@ -1,0 +1,340 @@
+@media screen and (max-height: 760px) {
+    #header .snsLink {
+        position: relative;
+        bottom: 0;
+        top: 3rem;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    .swiper-slide .text .tle {
+        font-size: 7.0rem;
+        white-space: nowrap;
+    }
+    .swiper-slide .text .desc {
+        font-size: 2.8rem;
+    }
+    /* about */
+    .about,
+    .youKnow .inn,
+    .menu,
+    .tasteful .inn {
+        padding: 6rem 2.4rem;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .tasteful .inn {
+        flex-direction: column;
+    }
+    .tasteful .inn .text {
+        margin-right: 0;
+        margin-bottom: 3.5rem;
+    }
+    .tasteful .inn .gallery {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #header {
+        width: 22rem;
+    }
+    #header .logo a strong {
+        font-size: 2.8rem;
+    }
+    #header .gnb ul li a {
+        font-size: 1.6rem;
+    }
+    #header .snsLink {
+        width: 12rem;
+    }
+    #header .snsLink:before {
+        width: 8rem;
+    }
+    #header .snsLink dd ul li a {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .swiper-slide .text .tle {
+        font-size: 6.4rem;
+    }
+    .swiper-slide .text .desc {
+        margin-bottom: 4rem;
+        font-size: 2.4rem;
+    }
+    .swiper-button-next, 
+    .swiper-button-prev {
+        display: none;
+    }
+    #container {
+        margin-left: 22rem;
+    }
+    .about > .title small,
+    .tasteful .inn > .text > .title small {
+        font-size: 2.0rem;
+    }
+    .about > .title strong,
+    .youKnow .inn > .title strong,
+    .menu > .title strong,
+    .tasteful .inn > .text > .title strong {
+        font-size: 6.8rem;
+    }
+    .about > .title span,
+    .youKnow .inn > .title span,
+    .menu > .title span,
+    .tasteful .inn > .text > .title span {
+        font-size: 2.4rem;
+    }
+    .youKnow .info li a .ico {
+        width: 5.0rem;
+    }
+    .menu .menuItem dt:nth-of-type(1) {
+        transform: translateX(-27rem);
+    }
+    .menu .menuItem dt:nth-of-type(2) {
+        transform: translateX(-9rem);
+    }
+    .menu .menuItem dt:nth-of-type(3) {
+        transform: translateX(9rem);
+    }
+    .menu .menuItem dt .btn {
+        width: 18rem;
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #footer .inn {
+        flex-direction: column;
+    }
+    #footer .inn .snslink {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrap {
+        flex-direction: column;
+    }
+    #header {
+        position: fixed;
+        right: 0;
+        z-index: 10;
+        height: 6rem;
+        width: auto;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        background: rgba(56,51,43,1);
+    }
+    #header:after {
+        display: none;
+    }
+    #header .inn {
+        display: flex;
+        align-items: center;
+        position: static;
+        padding-top: 0;
+        padding-bottom: 0;
+        max-height: auto;
+    }
+    #header .logo {
+        margin-left: 1.6rem;
+    }
+    #header .logo a {
+        display: flex;
+        align-items: center;
+    }
+    #header .logo a img {
+        width: 4.4rem;
+    }
+    #header .logo a .txt {
+        padding-left: 1rem;
+        text-align: left;
+    }
+    #header .logo a .txt strong {
+        margin-top: 0;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    #header .logo:after {
+        display: none;
+    }
+    #header .gnbarea {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 6rem;
+        background-color: rgba(56,51,43,1);
+        height: 0;
+        padding-top: 0;
+        overflow: hidden;
+        transition: all 0.2s;
+    }
+    #header .gnbarea.active {
+        height: 44.3rem;
+        padding-top: 3rem;
+        transition: all 0.5s;
+    }
+    #header .gnbarea .snsLink {
+        position: static;
+        width: 16rem;
+        padding-bottom: 6rem;
+    }
+    #header .snsLink:before {
+        background-color: #666;
+        position: static;
+        display: block;
+        margin: 0 auto;
+        transform: translateX(0);
+    }
+    #header .snsLink dd {
+        padding-top: 3rem;
+    }
+    #header .gnbarea .btnMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        right: 1.6rem;
+        top: 1.4rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        border: 0;
+        background: none;
+        cursor: pointer;
+    }
+    #header .gnbarea .btnMenu .bar {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #898989;
+        transition: all 0.3s;
+    }
+    #header .gnbarea .btnMenu .bar:nth-of-type(1) {top: 0.5rem}
+    #header .gnbarea .btnMenu .bar:nth-of-type(2) {top: 50%; transform: translateY(-50%)}
+    #header .gnbarea .btnMenu .bar:nth-of-type(3) {bottom: 0.5rem}
+
+    #header .gnbarea .btnMenu.active .bar:nth-of-type(1) {top: 50%; transform: translateY(-1.5px) rotate(45deg)}
+    #header .gnbarea .btnMenu.active .bar:nth-of-type(2) {display: none}
+    #header .gnbarea .btnMenu.active .bar:nth-of-type(3) {bottom: 50%; transform: translateY(1.5px) rotate(-45deg)}
+
+    #container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .about > .title small,
+    .tasteful .inn > .text > .title small {
+        font-size: 1.8rem;
+    }
+    .about > .title strong,
+    .youKnow .inn > .title strong,
+    .menu > .title strong,
+    .tasteful .inn > .text > .title strong {
+        font-size: 6.0rem;
+    }
+    .about > .title span,
+    .youKnow .inn > .title span,
+    .menu > .title span,
+    .tasteful .inn > .text > .title span {
+        font-size: 2.0rem;
+    }
+    .youKnow .info li a .ico {
+        width: 4.4rem;
+    }
+    .youKnow .info li a em {
+        display: none;
+    }
+
+    .menu .menuItem dd ul li {
+        width: 100%;
+    }
+    .menu .menuItem dt {
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    .menu .menuItem dt:nth-of-type(1) {
+        transform: translateX(0);
+    }
+    .menu .menuItem dt:nth-of-type(2) {
+        transform: translateX(0);
+        top: 6.6rem;
+    }
+    .menu .menuItem dt:nth-of-type(3) {
+        transform: translateX(0);
+        top: 13.2rem;
+    }
+    .menu .menuItem dt .btn {
+        width: 100%;
+        border-radius: 4px !important;
+        letter-spacing: 0;
+    }
+    .menu .menuItem dd {
+        padding-top: 24.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .swiper-slide .text {
+        left: 1.6rem;
+        right: 1.6rem;
+        transform: translateY(-50%);
+    }
+    .swiper-slide .text small {
+        font-size: 1.8rem;
+    }
+    .swiper-slide .text .tle {
+        font-size: 4.8rem;
+        letter-spacing: -0.05rem;
+    }
+    .swiper-slide .text .desc {
+        margin-bottom: 4rem;
+        font-size: 1.8rem;
+    }
+    .swiper-slide .text .btnarea {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .swiper-slide .text .btnarea a {    
+        width: 100%;
+        height: 5.6rem;
+        margin: 0 0 1rem;
+    }
+
+    /* about */
+    .about,
+    .youKnow .inn,
+    .menu,
+    .tasteful .inn {
+        padding: 4rem 1.6rem;
+    }
+    .about > .title small,
+    .tasteful .inn > .text > .title small {
+        font-size: 1.6rem;
+    }
+    .about > .title strong,
+    .youKnow .inn > .title strong,
+    .menu > .title strong,
+    .tasteful .inn > .text > .title strong {
+        font-size: 5.0rem;
+    }
+    .about > .title span,
+    .youKnow .inn > .title span,
+    .menu > .title span,
+    .tasteful .inn > .text > .title span {
+        font-size: 1.8rem;
+    }
+    .youKnow .info li a .ico {
+        width: 3.6rem;
+    }
+    .tasteful .inn .gallery ul {
+        grid-template-columns: 1fr;
+    }
+
+    /* footer */
+    #footer .inn .copyright a  {
+        text-align: center;
+    }
+}
